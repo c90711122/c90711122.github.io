@@ -7,7 +7,7 @@ body {
     margin-top: 20px;
     height: 300px;
     font-size: 20px;
-    background-color: black;
+    background-color: rgb(100, 100, 100);
     padding: 20px 15px;   
 }
 
@@ -21,4 +21,33 @@ body {
 .brand li {
     text-align: center;
     margin-bottom: 10px;
+}
+
+.sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 80px;
+    left: 10px;
+    background: rgb(219, 219, 219);
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #064579;
+}
+
+.products-main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    
+    padding: 0px 10px;
 }
