@@ -9,14 +9,44 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!--Style C-->
+    <!-- Custom Style -->
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <style>
+      .sidenav {
+          width: 130px;
+          position: fixed;
+          z-index: 1;
+          top: 80px;
+          left: 10px;
+          background: rgb(219, 219, 219);
+          overflow-x: hidden;
+          padding: 8px 0;
+      }
+
+      .sidenav a {
+          padding: 6px 8px 6px 16px;
+          text-decoration: none;
+          font-size: 20px;
+          color: #2196f3;
+          display: block;
+      }
+
+      .sidenav a:hover {
+          color: #064579;
+      }
+
+      .products-main {
+          margin-left: 140px; /* Same width as the sidebar + left position in px */
+          padding: 0px 10px;
+      }
+    </style>
+
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Phone Store</a>
-      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-          aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="../index.html">Phone Store</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -25,7 +55,10 @@
                   <a class="nav-link" href="#">News</a>
               </li>
               <li class="nav-item active">
-                  <a class="nav-link" href="">Products</a>
+                  <a class="nav-link" href="../product-list.html">Products</a>
+              </li>
+              <li class="nav-item active login-btn">
+                  <a href="login.html" class="btn btn-primary">Login</a>
               </li>
           </ul>
       </div>
